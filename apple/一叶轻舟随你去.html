@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>吃</title>
+	<style type="text/css">
+		.up{
+      text-align:center;
+      font-size:25px;
+      font-weight:bolder;
+      position:relative;
+      
+		}
+		.down{
+      text-align:center;
+      font-size:25px;
+      font-weight:bolder;
+      position:relative;
+		}
+		img{
+      width: 200px;
+			height: 200px;
+			margin-top:20px;
+			margin-left:15%;
+			display: block;
+			transition: all 2s;
+			border:10px solid white;
+			box-shadow:5px 5px 10px gray;
+			position:absolute;
+			display:flex;/*开启弹性布局*/
+	    justify-content: space-between;
+		  
+		}
+		.img1{
+      trasform:rotate(30deg);
+      margin-top:20px;
+      margin-left:12%;
+      z-index:2;
+		}
+		.img2{
+      trasform:rotate(30deg);
+      margin-top:20px;
+      margin-left:23%;
+  
+		}
+		.img3{
+      trasform:rotate(30deg);
+      margin-top:20px;
+      margin-left:30%;
+     
+		}
+		.img4{
+      trasform:rotate(30deg);
+      margin-top:20px;
+      margin-left:40%;
+    
+		}
+		.img5{
+      trasform:rotate(30deg);
+      margin-top:20px;
+      margin-left:50%;
+    
+		}
+    img:hover{/*置顶效果*/
+      transform:rotate(0deg) scale(1.2,1.2);
+      box-shadow:8px 8px 10px gray; 
+      z-index:2;
+			transform: rotate(45deg) scale(2,4) transform(50px,100px);
+			-webkit-transform:rotate(45deg);
+			-moz-transform:rotate(45deg);
+		}
+	</style>
+
+</head>
+<body>  
+<p class="up"><font face="宋体" color="#ce8483">还记得这家餐厅吗？</font></p>
+		<div class="img"><img src="鱼.jpg"/>
+        <div class="img1"><img src="偷拍1.jpg"/></div>
+        <div class="img2"><img src="豆腐.jpg"/></div>
+        <div class="img3"><img src="菜.jpg"/></div>
+        <div class="img4"><img src="偷拍.jpg"/></div>
+        <div class="img5"><img src="肉.jpg"/></div>
+		</div></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<p class="down"><font face="宋体" color="#ce8483">伦家太害羞了，所以只能偷拍啦(@·-·@）</font></p>
+<p class="down"><font face="宋体" color="#ce8483">喵~喵~喵~</font></p>
+</body>
+</html>

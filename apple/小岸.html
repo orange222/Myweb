@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>晓岸生日快乐</title>
+	<style type="text/css">
+		.outer{
+			padding-top:20px;/*内边距*/
+			height: 400px;
+			background-color: rgba(0,123,255,0.1); 
+		}
+		.inner{
+			width: 100px;
+			height: 60px;
+			background-color:pink;
+			margin-left: 30px;/*左外边距*/
+		}
+		.a{
+			transition: all 4s linear;/*用类对每个小方块进行变换*/
+		}
+		.b{
+			transition: all 4s ease;
+		}
+		.c{
+			transition: all 4s ease-in;
+		}
+		.d{
+			transition: all 4s ease-out;
+		}
+		.e{
+			transition: all 4s ease-in-out;
+		}
+		.p{
+			text-align: center;
+			height: 60px;
+			line-height: 60px;/*行高*/
+			color: white;
+			font-weight:bold; /*字厚度*/
+		}
+		.outer:hover .inner{
+			border-radius: 5px;/*边框圆角变为5px*/
+			opacity: 0.2;/*不透明度变为0.2*/
+			margin-left:90%; /*左边距变为90%*/
+			transform:rotate(360deg);/*旋转360度*/
+		}
+    img{
+			width: 200px;
+			height: 200px;
+			margin: 0px auto;
+			display: block;
+			transition: all 2s;
+		}
+		img:hover{/*置顶效果*/
+			-moz-transform:rotate(45deg);
+			-webkit-transform:rotate(45deg);
+			transform: rotate(45deg) scale(2,4) transform(50px,100px);
+			/*3D旋转*/
+		}
+		.row{
+      list-style: none;/*取消掉列表的标号*/
+      display:flex;/*开启弹性布局*/
+      flex-flow:row;/*沿着主轴排列*/
+      padding-left:40%;/*内左边距占40%*/
+      padding-top:1%;/*内上边距*/
+      height:50px;
+     }
+	</style>
+</head>
+<body>
+	<div class="outer"> 
+		<div class="inner a"><p>祝郑晓岸生日快乐</p></div>
+		<div class="inner b"><p>平平安安</p></div>
+		<div class="inner c"><p>心想事成</p></div>
+		<div class="inner d"><p>开开心心</p></div>
+		<div class="inner e"><p>remenber me</p></div>
+	</div>
+	<div><img src="雪.jpg"/>
+	<div><img src="面.jpg"/></div>
+	</div>
+<ul class="row">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="时光倒影.html">笨蛋，生日快乐喔</a>	
+</body>
+</html>
